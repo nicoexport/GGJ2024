@@ -6,6 +6,7 @@ public class AntMovement : MonoBehaviour {
     [SerializeField] float moveSpeed = 1f;
 
     Vector2 velocity;
+    public Vector2 aimDirection { get; private set; } = Vector2.right;
 
     protected void FixedUpdate() {
         characterController.Move(velocity * Time.deltaTime);
@@ -19,5 +20,12 @@ public class AntMovement : MonoBehaviour {
 
     public void OnMove(InputValue value) {
         velocity = value.Get<Vector2>().normalized * moveSpeed;
+    }
+
+    public void OnAim(InputValue value) {
+        var input = value.Get<Vector2>().normalized;
+        if (input.magnitude > 0f) {
+            aimDirection = input;
+        }
     }
 }
