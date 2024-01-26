@@ -8,10 +8,12 @@ public class AntMovement : MonoBehaviour {
 
     [SerializeField] CharacterController characterController;
     [SerializeField] float moveSpeed = 1f;
+    [SerializeField] float slowFactor = 0.5f;
+
+    public Vector2 aimDirection { get; private set; } = Vector2.right;
+    public bool isSlowed;
 
     Vector2 velocity;
-    public Vector2 aimDirection { get; private set; } = Vector2.right;
-
     Vector3 lastPos;
 
     protected void Awake() {
@@ -19,7 +21,13 @@ public class AntMovement : MonoBehaviour {
     }
 
     protected void FixedUpdate() {
-        characterController.Move(velocity * Time.deltaTime);
+        var movement = velocity * Time.deltaTime;
+
+        if (isSlowed) {
+            movement *= slowFactor;
+        }
+
+        characterController.Move(movement);
         float deltaMovement = Vector2.Distance(lastPos.SwizzleXY(), transform.position.SwizzleXY());
         lastPos = transform.position;   
         if (deltaMovement > 0f) {
