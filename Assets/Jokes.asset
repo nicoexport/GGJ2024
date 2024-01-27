@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ccf3923a37fe74bac3009cfc23be3e, type: 3}
+  m_Name: Jokes
+  m_EditorClassIdentifier: 
+  lines:
+  - I have a few jokes about unemployed people, but none of them work.
+  - I only know 25 letters of the alphabet. I don't know y.
+  - I used to play piano by ear, but now I use my hands and fingers.
+  - I'm reading a book on anti-gravity. It's impossible to put down.
+  - "I failed math so many times at school, I can\u2019t even count."
+  - 'It takes a lot of balls to golf the way I do. '
+  - When life gives you melons, you might be dyslexic.
+  - The problem with kleptomaniacs is that they always take things literally.
+  - Atheism is a non-prophet organization.
+  - "Well, to be Frank with you, I\u2019d have to change my name."
+  - Why did the M&M go to school? It wanted to be a smartie.
+  - I invented a new word! Plagiarism!
+  - Why was six afraid of seven? Because seven ate nine.
+  - 'How do cats bake brownies? From scratch. '
+  - 'How does NASA organise a party? They planet. '
+  - My wife told me I had to stop acting like a flamingo. So I had to put my foot
+    down.
+  - "What\u2019s orange and sounds like a parrot? A carrot."
+  - "I bought the world\u2019s worst thesaurus yesterday. Not only is it terrible,
+    it\u2019s terrible."
+  - 'This is my step ladder. I never knew my real ladder. '
+  - I ordered a chicken and an egg from Amazon. I'll let you know.
+  - I was going to tell a time traveling joke, but you guys didn't like it.
+  - What do you call a pony with a sore throat? A little horse.
+  - What do you call a fake noodle? An impasta.
+  - What do you call a bee that can't make up its mind? A Maybe.
+  - Did you hear the rumor about butter? Well, I'm not going to spread it.
+  - I used to hate facial hair...but then it grew on me.
+  - What do you call a group of disorganized cats? A cat-tastrophe.
+  - 'How do you tell if a vampire is sick? By how much he is coffin. '
+  - Why did the painting go to jail?  It was framed.
+  - I like elephants. Everything else is irrelephant.
+  - "What\u2019s red and bad for your teeth? A brick."
+  - "Do you want to hear a construction joke? Sorry, I\u2019m still working on it."
+  - What did the full glass say to the empty glass? You look drunk.
+  - "Did you hear the one about the roof? Never mind, it\u2019s over your head."
+  - "What\u2019s the best smelling insect? A deodor-ant."
+  - What do you call sad coffee? Despresso.
+  - "What don\u2019t ants get sick? They have anty-bodies."
+  - The past, present and future walked into a bar. It was tense.
+  - How do you make holy water? You boil the hell out of it.
+  - "What is an astronaut\u2019s favorite meal of the day? Launch."
+  - Where do pirates get their hooks? Secondhand stores.
+  - What do sea monsters eat? Fish and ships.
+  - What sits at the bottom of the sea and twitches? A nervous wreck.
+  - What does it take to make an octopus laugh? Ten-tickles.
+  - There's never any ants at Church. They're in sects.
+  - How many ants does it take to rent a house? Ten ants.
