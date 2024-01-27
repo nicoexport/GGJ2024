@@ -34,11 +34,11 @@
                 },
                 {
                     "name": "ChargeRelease",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "ec663d6b-ef2a-4dca-a854-e66b5779b33a",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=1)",
+                    "interactions": "",
                     "initialStateCheck": true
                 },
                 {
@@ -143,7 +143,7 @@
                 {
                     "name": "",
                     "id": "61b57f7b-91f3-45df-b9c3-084ad20185eb",
-                    "path": "<Gamepad>/rightTrigger",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
