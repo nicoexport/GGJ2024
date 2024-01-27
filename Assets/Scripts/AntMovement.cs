@@ -12,6 +12,7 @@ public class AntMovement : MonoBehaviour {
 
     public Vector2 aimDirection { get; private set; } = Vector2.right;
     public bool isSlowed;
+    public bool isOnBelly;
 
     Vector2 velocity;
     Vector3 lastPos;
