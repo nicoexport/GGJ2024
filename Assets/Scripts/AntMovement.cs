@@ -13,15 +13,26 @@ public class AntMovement : MonoBehaviour {
     public Vector2 aimDirection { get; private set; } = Vector2.right;
     public bool isSlowed;
     public bool isOnBelly;
+    bool active = true;
 
     Vector2 velocity;
     Vector3 lastPos;
+
+
+    protected void OnEnable() {
+        GameManager.onWin += HandleWin;
+    }
+
 
     protected void Awake() {
         lastPos = transform.position;
     }
 
     protected void FixedUpdate() {
+        if (!active) {
+            return;
+        }
+
         var movement = velocity * Time.deltaTime;
 
         if (isSlowed) {
@@ -43,13 +54,23 @@ public class AntMovement : MonoBehaviour {
     }
 
     public void OnMove(InputValue value) {
+        if (!active) {
+            return;
+        }
         velocity = value.Get<Vector2>().normalized * moveSpeed;
     }
 
     public void OnAim(InputValue value) {
+        if (!active) {
+            return;
+        }
         var input = value.Get<Vector2>().normalized;
         if (input.magnitude > 0f) {
             aimDirection = input;
         }
+    }
+
+    void HandleWin() {
+        active = false;
     }
 }

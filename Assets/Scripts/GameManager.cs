@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] float totalMovementGoal;
 
     public static event Action<float, float> onTotalMoveUpdate;
+    public static event Action onWin;
 
     float movementTotal = 0f;
 
@@ -33,5 +34,8 @@ public class GameManager : MonoBehaviour {
     void HandleAntMovement(float value) {
         movementTotal += value;
         onTotalMoveUpdate?.Invoke(movementTotal, totalMovementGoal);
+        if (movementTotal >= totalMovementGoal) {
+            onWin?.Invoke();
+        }
     }
 }
