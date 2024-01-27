@@ -207,7 +207,7 @@
                 "m_Node": {
                     "m_Id": "e41b24265e5b4639a4e5285dca55355f"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -1120,7 +1120,7 @@
     "m_DefaultRefNameVersion": 1,
     "m_RefNameGeneratedByDisplayName": "Texture",
     "m_DefaultReferenceName": "_Texture",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_MainTex",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
@@ -1493,7 +1493,7 @@
     "m_Hidden": false,
     "m_Value": {
         "x": 0.20000000298023225,
-        "y": 0.05000000074505806,
+        "y": 0.10000000149011612,
         "z": 0.0,
         "w": 0.0
     }
