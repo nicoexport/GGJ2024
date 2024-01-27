@@ -11,6 +11,7 @@ public class Ant : MonoBehaviour {
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] float hairSlowFactor = 0.5f;
     [SerializeField] AnimationCurve chargeSlowCurve;
+    [SerializeField] float rotationSpeed = 0.5f;
     public float charge;
 
     public Vector2 aimDirection { get; private set; } = Vector2.right;
@@ -51,7 +52,17 @@ public class Ant : MonoBehaviour {
         if (deltaMovement > 0f) {
             onAntMove?.Invoke(deltaMovement);
         }
+
+        // Calculate the rotation angle in degrees
+        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+
+        // Create a rotation quaternion from the angle
+        var rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+
+        // Apply the rotation to the object
+        transform.rotation = rotation;
     }
+
 
     protected void OnValidate() {
         if (!characterController) {
