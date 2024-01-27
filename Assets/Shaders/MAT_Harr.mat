@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_Background
+  m_Name: MAT_Harr
   m_Shader: {fileID: -6465566751694194690, guid: 379ea4ae3b98f474dbc615fb153d0fc5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -70,12 +70,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DistortionAmount: 0.35
+    - _DistortionAmount: 0.05
     - _EnableExternalAlpha: 0
-    - _NoiseScale: 25
+    - _NoiseScale: 80
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _NoiseVector: {r: 0.2, g: 0.05, b: 0, a: 0}
+    - _NoiseVector: {r: 0.2, g: 0, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
