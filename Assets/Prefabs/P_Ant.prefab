@@ -263,6 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c4bf3b07e24ee4f85fcf2464326e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 8084290872512550750, guid: 5faeea7af518ac545a3ad99e126cb91d, type: 3}
   characterController: {fileID: 2105834676627200775}
   moveSpeed: 2
   hairSlowFactor: 0.5

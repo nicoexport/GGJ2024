@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Ant : MonoBehaviour {
     public static event Action<float> onAntMove;
 
+    [SerializeField] Projectile projectilePrefab;
     [SerializeField] CharacterController characterController;
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] float hairSlowFactor = 0.5f;
@@ -17,8 +18,6 @@ public class Ant : MonoBehaviour {
     public bool isOnBelly;
 
     bool active = true;
-
-
 
     Vector2 velocity;
     Vector3 lastPos;
@@ -90,7 +89,9 @@ public class Ant : MonoBehaviour {
             return;
         }
 
-        Debug.Log("Release");
+        var spawnPos = transform.position + aimDirection.SwizzleXY();
+        var proj = Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
+        proj.Setup(aimDirection);  
     }
 
     void HandleWin() {
