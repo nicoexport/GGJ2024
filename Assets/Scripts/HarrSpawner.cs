@@ -7,17 +7,35 @@ public class HarrSpawner : MonoBehaviour {
     [SerializeField] float spawnDelayMax = 3f;
     float timer;
 
+    bool active = true;
+
 
     protected void Start() {
         StartTimer();
     }
 
     protected void Update() {
+        if (!active) {
+            return;
+        }
+
         timer -= Time.deltaTime;
-        if (timer < 0f ) {
+        if (timer < 0f) {
             Spawn();
         }
     }
+
+    protected void OnEnable() {
+        GameManager.onWin += StopSpawning;
+        GameManager.onLose += StopSpawning;
+    }
+
+    protected void OnDisable() {
+        GameManager.onWin -= StopSpawning;  
+        GameManager.onLose -= StopSpawning;
+    }
+
+    void StopSpawning() => active = false;
 
     Vector2 GenerateRandomPointInPolygon(Collider2D collider) {
         var bounds = collider.bounds;

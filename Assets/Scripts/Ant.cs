@@ -26,8 +26,13 @@ public class Ant : MonoBehaviour {
 
     protected void OnEnable() {
         GameManager.onWin += HandleWin;
+        GameManager.onLose += HandleWin;
     }
 
+    protected void OnDisable() {
+        GameManager.onWin -= HandleWin;
+        GameManager.onLose -= HandleWin;
+    }
 
     protected void Awake() {
         lastPos = transform.position;
