@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: How many ants does it take to rent a house? Ten ants.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f1f8790f3d552dc4cb3664fdc9a9e066, type: 2}
+  m_sharedMaterial: {fileID: -4827682615531836243, guid: f1f8790f3d552dc4cb3664fdc9a9e066, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.3
+  m_fontSize: 0.25
   m_fontSizeBase: 0.4
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
   controller: {fileID: 2864923678222727621}
   speed: 5
   textmesh: {fileID: 7443683566194064645}
-  lines: {fileID: 11400000, guid: 4899068745f6e3f43abe40bb20098010, type: 2}
+  lines: {fileID: 11400000, guid: d112c0c7d7fd42941828ada01cabb0cc, type: 2}
 --- !u!1 &5794384379737739908
 GameObject:
   m_ObjectHideFlags: 0

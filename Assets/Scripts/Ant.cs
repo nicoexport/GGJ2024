@@ -105,7 +105,7 @@ public class Ant : MonoBehaviour {
             return;
         }
 
-        var spawnPos = transform.position + aimDirection.SwizzleXY();
+        var spawnPos = transform.position + aimDirection.SwizzleXY() * 1.5f;
         var proj = Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
         proj.Setup(aimDirection);  
     }
