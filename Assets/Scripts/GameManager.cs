@@ -24,11 +24,11 @@ public class GameManager : MonoBehaviour {
     }
 
     protected void OnEnable() {
-        AntMovement.onAntMove += HandleAntMovement;
+        Ant.onAntMove += HandleAntMovement;
     }
 
     protected void OnDisable() {
-        AntMovement.onAntMove -= HandleAntMovement;
+        Ant.onAntMove -= HandleAntMovement;
     }
 
     void HandleAntMovement(float value) {

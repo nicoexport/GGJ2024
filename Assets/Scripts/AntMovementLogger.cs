@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class AntMovementLogger : MonoBehaviour {
     protected void OnEnable() {
-        AntMovement.onAntMove += LogAntMovement;
+        Ant.onAntMove += LogAntMovement;
     }
 
     protected void OnDisable() {
-        AntMovement.onAntMove -= LogAntMovement;
+        Ant.onAntMove -= LogAntMovement;
     }
 
     void LogAntMovement(float movement) {
