@@ -14,5 +14,9 @@ public class Projectile : MonoBehaviour {
 
     protected void FixedUpdate() {
         controller.Move(Mathf.Clamp(charge, 0.2f, 1f) * speed * Time.deltaTime * direction);
+
+        if (controller.collisionFlags != 0) {
+            Destroy (gameObject);
+        }
     }
 }
