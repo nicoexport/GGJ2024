@@ -2711,6 +2711,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_UI_Button
       objectReference: {fileID: 0}
+    - target: {fileID: 1329854581627644222, guid: d6a7db965f436e140aab9bb32119445c, type: 3}
+      propertyPath: m_fontSize
+      value: 26.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434934255031580733, guid: d6a7db965f436e140aab9bb32119445c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434934255031580733, guid: d6a7db965f436e140aab9bb32119445c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 176
+      objectReference: {fileID: 0}
     - target: {fileID: 6983005440637182072, guid: d6a7db965f436e140aab9bb32119445c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
