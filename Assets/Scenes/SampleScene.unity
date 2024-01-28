@@ -1049,7 +1049,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 146, y: -93.468}
+  m_AnchoredPosition: {x: 174, y: -165}
   m_SizeDelta: {x: 200, y: 86.9362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &975848857
@@ -1842,6 +1842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1717888369}
   - component: {fileID: 1717888368}
+  - component: {fileID: 1717888370}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1916,6 +1917,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1717888370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717888367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ecc137f6de9ce41a3daee83e67aa7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1717888368}
+  texture: {fileID: 2800000, guid: f5fe430485048574693914d1ffdafb3d, type: 3}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.7785596
+      value: 0.43451884
+      inSlope: 1.4461515
+      outSlope: 1.4461515
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.25603145
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1779884818
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,7 +2196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   polygonCollider: {fileID: 1914867657}
   harrPrefab: {fileID: 1071257226668255685, guid: 23e4d81e2b058c34b8b678d0e494a07a, type: 3}
-  spawnDelayMin: 0.2
+  spawnDelayMin: 0.4
   spawnDelayMax: 1
 --- !u!4 &1914867656
 Transform:
@@ -2833,6 +2881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_UI_Scratch_Text
       objectReference: {fileID: 0}
+    - target: {fileID: 6514921829757555942, guid: 71089d91440af834a900ae5df939c053, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2885,6 +2937,14 @@ PrefabInstance:
     - target: {fileID: 1223173385796526698, guid: 7ef3061190b66cd4cac76c9c30382597, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582126185615822659, guid: 7ef3061190b66cd4cac76c9c30382597, type: 3}
+      propertyPath: gameTime
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582126185615822659, guid: 7ef3061190b66cd4cac76c9c30382597, type: 3}
+      propertyPath: totalMovementGoal
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8679793008403639279, guid: 7ef3061190b66cd4cac76c9c30382597, type: 3}
       propertyPath: m_Name

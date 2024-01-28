@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2864923678222727621}
-  speed: 5
+  speed: 3
   textmesh: {fileID: 7443683566194064645}
   lines: {fileID: 11400000, guid: d112c0c7d7fd42941828ada01cabb0cc, type: 2}
 --- !u!1 &5794384379737739908
